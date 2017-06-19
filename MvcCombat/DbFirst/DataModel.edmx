@@ -2,7 +2,7 @@
 <edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
   <!-- EF Runtime content -->
   <edmx:Runtime>
-    <!-- SSDL content -->
+    <!-- SSDL content 定义存储模型-->
     <edmx:StorageModels>
       <Schema Namespace="EFDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="t_customer">
@@ -19,7 +19,7 @@
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
-    <!-- CSDL content -->
+    <!-- CSDL content  定义概念模型-->
     <edmx:ConceptualModels>
       <Schema Namespace="EFDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="t_customer">
@@ -36,7 +36,7 @@
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
-    <!-- C-S mapping content -->
+    <!-- C-S mapping content 定义存储模型与概念模型之间的映射M-->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="EFDbModelStoreContainer" CdmEntityContainer="EFDbEntities">

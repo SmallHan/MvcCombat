@@ -13,6 +13,7 @@ namespace DbFirst
             EFDbEntities entity = new EFDbEntities();
             t_customer customer = new t_customer()
             {
+                
                 Adress="东海五彩金轮",
                 Age=23,
                 UserName="小瀚"
