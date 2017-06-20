@@ -1,0 +1,11 @@
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\EFDemo.exe.config
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\EFDemo.exe
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\EFDemo.pdb
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\EntityFramework.dll
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\EntityFramework.xml
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\EntityFramework.SqlServer.xml
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\work\MvcCombat\MvcCombat\EFDemo\obj\Debug\EFDemo.exe
+C:\work\MvcCombat\MvcCombat\EFDemo\obj\Debug\EFDemo.pdb
+C:\work\MvcCombat\MvcCombat\EFDemo\obj\Debug\EFDemo.csprojResolveAssemblyReference.cache

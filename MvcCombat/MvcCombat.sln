@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbFirst", "DbFirst\DbFirst.csproj", "{7DD919ED-6D19-4BD6-B0B9-E9E102467CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDemo", "EFDemo\EFDemo.csproj", "{1B1CF61D-8B3D-4DD2-B26B-AFA6FCDF66E8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DD919ED-6D19-4BD6-B0B9-E9E102467CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD919ED-6D19-4BD6-B0B9-E9E102467CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD919ED-6D19-4BD6-B0B9-E9E102467CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD919ED-6D19-4BD6-B0B9-E9E102467CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1CF61D-8B3D-4DD2-B26B-AFA6FCDF66E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1CF61D-8B3D-4DD2-B26B-AFA6FCDF66E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1CF61D-8B3D-4DD2-B26B-AFA6FCDF66E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1CF61D-8B3D-4DD2-B26B-AFA6FCDF66E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
