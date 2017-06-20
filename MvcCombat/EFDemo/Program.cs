@@ -19,7 +19,8 @@ namespace EFDemo
             //List<Customers> list=GetListBy<string>(o => o.CompanyName == "深圳市XXX软件技术有限公司", o => o.CustomerID);
             //List<Customers> list=GetPageList<string>(1, 10, o => o.CompanyName == "深圳市XXX软件技术有限公司", o => o.CustomerID);
             //Edit();
-            Delete();
+            //Delete();
+            Query1();
             Console.WriteLine("ok");
             Console.ReadKey();
 
@@ -57,6 +58,25 @@ namespace EFDemo
             }
             return res;
          
+        }
+        static void Query1()
+        {
+            using (var edm = new NorthwindEntities())
+            {
+                var query=from d in edm.Order_Details
+                          join order in edm.Orders
+                          on d.OrderID equals order.OrderID
+                          select new
+                          {
+                              OrderId=order.OrderID,
+                              ProdcutId=d.ProductID,
+                              UnitPrice=d.UnitPrice
+                          };
+                foreach (var q in query)
+                {
+                    Console.WriteLine("{0}-{1}-{2}",q.OrderId,q.ProdcutId,q.UnitPrice);
+                }
+            }
         }
         static void QueryDelay1()
         {
