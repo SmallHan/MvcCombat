@@ -41,5 +41,11 @@ namespace MvcModelApp.Controllers
             var model = db.Database.SqlQuery<tb_User>(sql);
             return View(model);
         }
+        [HttpGet]
+        public ActionResult Invoke1(string _id)
+        {
+            string id = _id;
+            return View();
+        }
 	}
 }
