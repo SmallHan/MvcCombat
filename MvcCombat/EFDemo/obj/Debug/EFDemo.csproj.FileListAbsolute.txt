@@ -9,3 +9,4 @@ C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\zh-Hans\EntityFramework.resources.d
 C:\work\MvcCombat\MvcCombat\EFDemo\obj\Debug\EFDemo.exe
 C:\work\MvcCombat\MvcCombat\EFDemo\obj\Debug\EFDemo.pdb
 C:\work\MvcCombat\MvcCombat\EFDemo\obj\Debug\EFDemo.csprojResolveAssemblyReference.cache
+C:\work\MvcCombat\MvcCombat\EFDemo\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

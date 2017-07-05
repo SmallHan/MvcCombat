@@ -13,14 +13,14 @@ namespace EFDemo
     {
         static void Main(string[] args)
         {
-            //Add();
+            Add();
             //QueryDelay1();
             //QueryDelay2();
             //List<Customers> list=GetListBy<string>(o => o.CompanyName == "深圳市XXX软件技术有限公司", o => o.CustomerID);
             //List<Customers> list=GetPageList<string>(1, 10, o => o.CompanyName == "深圳市XXX软件技术有限公司", o => o.CustomerID);
             //Edit();
             //Delete();
-            Query1();
+            //Query1();
             Console.WriteLine("ok");
             Console.ReadKey();
 
