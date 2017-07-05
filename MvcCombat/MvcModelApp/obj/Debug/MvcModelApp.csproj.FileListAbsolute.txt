@@ -24,3 +24,4 @@ C:\work\MvcCombat\MvcCombat\MvcModelApp\bin\zh-Hans\System.Web.Helpers.resources
 C:\work\MvcCombat\MvcCombat\MvcModelApp\bin\zh-Hans\System.Web.Mvc.resources.dll
 C:\work\MvcCombat\MvcCombat\MvcModelApp\obj\Debug\MvcModelApp.dll
 C:\work\MvcCombat\MvcCombat\MvcModelApp\obj\Debug\MvcModelApp.pdb
+C:\work\MvcCombat\MvcCombat\MvcModelApp\obj\Debug\MvcModelApp.csprojResolveAssemblyReference.cache
