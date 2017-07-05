@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@ViewBag.Message
+
+<!--在调用html中加上一个@符号就可以写c#代码-->
+<div>
+    @for(var i = 0; i <= 3; i++)
+    {
+        <p>@i</p>
+    }
+</div>
+

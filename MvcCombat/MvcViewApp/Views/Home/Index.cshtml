@@ -1,0 +1,19 @@
+﻿@model MvcViewApp.Models.User
+@{
+    ViewBag.Title = "Index";
+}
+<h2>测试用的</h2>
+<p>@ViewData["One"]</p>
+<p>@ViewBag.Two</p>
+<p>@Model.Name</p>
+<p>@TempData["Four"]</p>
+
+<span>316598703@qq.com</span>
+@{
+    string str = "<p>你好</p>";
+    <p>@str</p>
+}
+<br />
+<p>输出标签</p>
+@Html.Raw("<p>666</p>")
+

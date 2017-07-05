@@ -1,0 +1,75 @@
+﻿@model MvcModelApp.tb_User
+@{
+    Layout = null;
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    @using (Html.BeginForm("Register", null, FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.UserName)</td>
+                <td>
+                    @Html.TextBoxFor(x => x.UserName)
+                    @Html.ValidationMessageFor(x => x.UserName)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Age)</td>
+                <td>
+                    @Html.TextBoxFor(x => x.Age)
+                    @Html.ValidationMessageFor(x => x.Age)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Pwd)</td>
+                <td>
+                    @Html.PasswordFor(x => x.Pwd)
+                    @Html.ValidationMessageFor(x => x.Pwd)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.RePwd)</td>
+                <td>
+                    @Html.PasswordFor(x => x.RePwd)
+                    @Html.ValidationMessageFor(x => x.RePwd)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Email)</td>
+                <td>
+                    @Html.TextBoxFor(x => x.Email)
+                    @Html.ValidationMessageFor(x => x.Email)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.DisplayNameFor(x => x.Remark)</td>
+                <td>
+                    @Html.TextBoxFor(x => x.Remark)
+                    @Html.ValidationMessageFor(x => x.Remark)
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="注册"/>
+                </td>
+            </tr>
+        </table>
+    }
+</body>
+</html>
