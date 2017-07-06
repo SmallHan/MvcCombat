@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowEmployeesList</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnEmployeesList").click(function () {
+                $.post("/Home/GetEmployeesList", {}, function (data) {
+                    var res = $.parseJSON(data);
+                    $.each(res, function (key, value) {
+                        $("#tbEmployeesList").append("<tr>");
+                        $("#tbEmployeesList").append("<td>" + res[key].FirstName + "</td>");
+                        $("#tbEmployeesList").append("<td>" + res[key].LastName + "</td>");
+                        $("#tbEmployeesList").append("<td>" + res[key].City + "</td>");
+                        $("#tbEmployeesList").append("</tr>");
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="margin-bottom:30px;">
+        <input type="button" id="btnEmployeesList" value="获取员工信息列表" />
+        <table class="table table-bordered">
+            <caption>员工列表</caption>
+            <thead>
+                <tr>
+                    <th>姓氏</th>
+                    <th>姓名</th>
+                    <th>城市</th>
+                </tr>
+            </thead>
+            <tbody id="tbEmployeesList"></tbody>
+        </table>
+</body>
+</html>

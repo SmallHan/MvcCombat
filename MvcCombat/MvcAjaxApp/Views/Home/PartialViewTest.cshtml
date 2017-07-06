@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PartialViewTest</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+</head>
+<body>
+    @using (Ajax.BeginForm("BaseInfo", "Home", new AjaxOptions
+    {
+        //数据显示的html的容易Id
+        UpdateTargetId = "msgDiv",
+        //替换容器内容
+        InsertionMode = InsertionMode.Replace,
+        HttpMethod = "post",
+        OnFailure = "fail",
+        OnSuccess = "success",
+        LoadingElementId = "lodeingmsg"
+    }))
+    {
+        <input type="text" name="txtName" />
+        <input type="submit" value="提交" />
+    }
+    <div id="lodeingmsg" style="display:none">加载中...</div>
+    <div id="msgDiv"></div>
+    <script type="text/javascript">
+        function fail(txt) {
+            alert("查询失败,失败原因:" + txt);
+        }
+        
+        function success(txt) {
+            //alert("查询成功,查询信息:" + txt);
+        }
+    </script>
+</body>
+</html>
