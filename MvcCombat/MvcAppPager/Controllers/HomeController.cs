@@ -1,4 +1,5 @@
-﻿using MvcAppPager.Models;
+﻿using MvcAppPager.Filter;
+using MvcAppPager.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,23 @@ namespace MvcAppPager.Controllers
             PageOfList<Order> orderList = new PageOfList<Order>(list, pageIndex, PageSize, counts);
 
             return View(orderList);
+        }
+        [MyActionFilterAttribute]
+        public ActionResult FilterMethod()
+        {
+            return Content(string.Format("Action 中的方法:{0}<br/>", DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ff")));
+        }
+        public ActionResult OnAuthorizationMthod()
+        {
+            return View();
+        }
+
+        [TestHandleErrorAttribute]
+        public ActionResult GetErr()
+        {
+            int a = 0;
+            int b = 1 / a;
+            return View();
         }
 	}
 }

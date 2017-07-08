@@ -9,7 +9,7 @@ namespace MvcAppPager
 {
     public class RouteConfig
     {
-        public static void RegisterRoutes(RouteCollection routes)
+         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
